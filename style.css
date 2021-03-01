@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  main {
+    font-family: "Playfair Display", sans-serif;
+    min-height: 100vh;
+    background: #000000;
+    /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+    display: flex;
+    align-items: center;
+  }
+  .phone1 {
+    width: 250px;
+    height: 530px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    border-top: 2px solid #ffffff7a;
+    border-left: 2px solid #ffffff7a;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px);
+    position: relative;
+    left: 500px;
+  }
+  .phone2{
+    width: 250px;
+    height: 530px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    border-top: 2px solid #ffffff7a;
+    border-left: 2px solid #ffffff7a;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px);
+    position: relative;
+    left: 545px;
+    top: 30px;
+  }
+  .phone1::before{
+    content: '';
+    width: 250px;
+    height: 530px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+    background: linear-gradient(210deg, #daff6e 0%, rgba(255,255,255,0.1) 17.71%) no-repeat;
+  }
+  .container{
+    position: relative;
+    width: 250px;
+    height: 530px;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(45px);
+  }
+  .menu, .menu1{
+      display: flex;
+  }
+  .menu img{
+    width: 96px;
+    border-radius: 30%;
+    padding: 25px;
+    position: relative;
+    left: 140px;
+    top: -5px;
+  }
+  .menu1 img{
+    width: 15px;
+    top: 15px;
+    left: 15px;
+    position: relative;
+  }
+  .first-line{
+    width: 20px;
+    border: 0.3px solid #fff;
+    position: relative;
+    top: 23px;
+    left: 20px;
+  }
+  .second-line{
+    width: 12px;
+    border: 0.3px solid #fff;
+    position: relative;
+    top: 30px;
+    left: 20px;
+  }
+  .third-line{
+    width: 18px;
+    border: 0.3px solid #fff;
+    position: relative;
+    top: 37px;
+    left: 20px; 
+  }
+  .body-top{
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px);
+  }
+  .amount{
+    color: #fff;
+    text-align: center;
+    font-size: 34px;
+  }
+  .inc-exp{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+  }
+  .inc, .exp{
+    font-size: 12px;
+    color: #ffffff;
+  }
+  .inc span {
+    color: #daff6e;
+  }
+  .exp span{
+      color: #D788C8;
+  }
+  .middle-box{
+    height: 70px;
+    width: 30px;
+    background: rgba(255,255,255, 0.04);
+    position: relative;
+    left: 200px;
+    top: 20px;
+    border-radius: 20px;
+  }
+  .dots-green{
+    border: 1px solid #daff6e;
+    border-radius: 50%;
+    padding: 2px;
+    position: absolute;
+    top: 18px;
+    left: 12px;
+  }
+  .dots-pink{
+    border: 1px solid #D788C8;
+    border-radius: 50%;
+    padding: 2px;
+    position: absolute;
+    top: 45px;
+    left: 12px;
+  }
+  .months{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px);
+  }
+  .months span{
+    color: rgba(255,255,255,0.3);
+    font-size: 10px;
+  }
+  .square-box{
+    display: flex;
+    justify-content: space-evenly;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px);
+  }
+  .square1, .square2, .square3, .square4{
+    width: 93px;
+    height: 93px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 17px;
+    margin-top: 12px;
+    border: 0.3px solid #ffffff7a;
+  }
+  .square1 img, .square3 img, .square4 img{
+    width: 27px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border-radius: 7px;
+  }
+  .square2 .transfer{
+    width: 27px;
+    padding: 5px;
+    background: rgba(218,255,110, 0.8);
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border-radius: 7px;
+    box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.5);
+  }
+  .txt{
+    font-size: 10px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    left: 7px;
+  }
+  .today{
+    font-size: 9px;
+    color: #ffffff7a;
+    position: relative;
+    top: 32px;
+    left: 7px;
+  }
+    .card {
+        position: relative;
+    }
+    .circles{
+        position: relative;
+        left: 135px;
+        top: 3px;
+    }
+      .circle1{
+        width: 16px;
+        height: 16px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        top: 9px;
+        left: 9px;
+      }
+      .circle2{
+        width: 16px;
+        height: 16px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        top: -7px;
+        left: 18px;
+      }
+      .plus{
+        color: #fff;
+        position: absolute;
+        top: 47px;
+        left: 21px;
+        border: 1px dashed;
+        padding: 50px 3px;
+      }
+    .glass_card_front {
+        background: rgba(218,255,110, 0.8);
+        border-radius: 15px;
+        backdrop-filter: blur(3px);
+        box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 0.4);
+        position: relative;
+        width: 180px;
+        height: 130px;
+        /* top: 80%; */
+        left: 60%;
+        transform: translate(-52%, 18%);
+        z-index: 1;
+        transform-style: preserve-3d;
+        transition: 1s;
+        backface-visibility: hidden;
+    }
+    .glass_card_front .visa-logo{
+        width: 30px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    .glass_card_front p, .glass_card_back p{
+        font-size: 12px;
+    }
+    .glass_card_front .card-number{
+        position: relative;
+        top: 60px;
+        left: 17px;
+    }
+    .glass_card_back .card-number, .default-card .card-number{
+        position: relative;
+        top: 38px;
+        left: 17px;     
+    }
+    .glass_card_front .card-balance, .glass_card_front .card-amount{
+        position: relative;
+        top: 40px;
+        left: 15px;
+    }
+    .glass_card_back .card-balance, .glass_card_back .card-amount,
+    .default-card .card-balance, .default-card .card-amount{
+        position: relative;
+        top: 15px;
+        left: 15px;
+    }
+    .glass_card_front .owner {
+        display: flex;
+        position: relative;
+        top: 65px;
+        left: 10px;
+    }
+    .glass_card_back .owner, .default-card .owner{
+        position: relative;
+        top: 40px;
+        left: 10px;
+    }
+    .glass_card_front .valid, .glass_card_back .valid{
+        font-size: 12px;
+        font-weight: lighter;
+        position: relative;
+        left: 65px;
+    }
+    .default-card .valid{
+        font-size: 12px;
+        font-weight: lighter;
+        position: relative;
+        left: 100px;
+    }
+    .card:hover .glass_card_front{
+        transform: rotateY(180deg);
+    }
+    .card .glass_card_back{
+        transform: rotateY(180deg);
+    }
+    .card:hover .glass_card_back{
+        transform: rotateY(360deg);
+        transform: translate(-90px, -105px);
+    }
+    .glass_card_back {
+        background: linear-gradient(to top, rgba(218,255,110, 0.8), rgba(255,255, 255, 0.2));
+        border-radius: 15px;
+        backdrop-filter: blur(3px);
+        box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 0.4);
+        position: relative;
+        width: 180px;
+        height: 130px;
+        /* top: 80%; */
+        left: 60%;
+        transform: translate(-52%, 18%);
+        z-index: 1;
+        transform-style: preserve-3d;
+        transition: 1s;
+        backface-visibility: hidden;
+    }
+    .default-card{
+        background: linear-gradient(217deg, #D7765D, rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(218,255,110, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, #D16DBC, rgba(0,0,255,0) 70.71%);
+        border-radius: 15px;
+        backdrop-filter: blur(3px);
+        box-shadow: 1px 4px 18px 0 rgba(255, 255, 255, 0.4);
+        position: relative;
+        width: 210px;
+        height: 140px;
+        /* top: 80%; */
+        left: 52%;
+        transform: translate(-52%, 18%);
+        z-index: 1;
+    }
+    .default h2{
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .default p{
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+    }
+    .default-card .circles{
+        position: relative;
+        left: 158px;
+        top: 3px;
+    }
+    .default-card .circle1{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        top: 9px;
+        left: 9px;
+    }
+    .default-card .circle2{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        top: -11px;
+        left: 20px;
+    }
+    .default-card p{
+        font-size: 12px;
+    }
+    .spending-limit{
+        display: flex;
+        color: #fff;
+        font-size: 12px;
+        position: relative;
+        top: 45px;
+        left: 23px;
+    }
+    .spending-limit .btn-round{
+        border-radius: 42%;
+        border: 1px solid #e2e2e2;
+        padding: 2px 10px;
+        position: relative;
+        top: -4px;
+        left: 81px;
+    }
+    .spending-limit .button{
+        border-radius: 50%;
+        background-color: #e2e2e2;
+        padding: 7px;
+        position: relative;
+        left: -8px;
+    }
+.allwrap {
+    overflow: hidden;
+    position: absolute;
+    height: 110%;
+    width: 50%;
+  }
+  
+  .cnt {
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 150px;
+    text-align: center;
+    width: 800px;
+  }
+  
+
+  @media screen and (max-width: 800px){
+    main {
+    font-family: "Playfair Display", sans-serif;
+    min-height: 100vh;
+    background: #000000;
+    /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+    display: block;
+    align-items: center;
+    padding: 50px 0px;
+    }
+    .allwrap{
+        display: none;
+    }
+    .phone1{
+    width: 250px;
+    height: 530px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    border-top: 2px solid #ffffff7a;
+    border-left: 2px solid #ffffff7a;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px);
+    position: relative;
+    left: 40px;
+    }
+    .phone2{
+    width: 250px;
+    height: 530px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    border-top: 2px solid #ffffff7a;
+    border-left: 2px solid #ffffff7a;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px);
+    position: relative;
+    left: 40px;
+    }
+  }
+
+
+

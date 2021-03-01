@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="./style.css"/>
+    <title>Bank Card App</title>
+
+</head>
+<body>
+    <main>
+        <div class="allwrap">
+            <div id="canvas-container" style="width: 50%; height: 100%;">
+              <canvas id="sineCanvas" width="100%" height="100%"></canvas>
+            </div>
+        </div>
+
+        <div class="phone1">
+            <div class="container">
+            <div class="menu">
+                <div class="menu-icon">
+                    <div class="first-line"></div>
+                    <div class="second-line"></div>
+                    <div class="third-line"></div>
+                </div>
+                <img class="" src="./images/Screenshot 2020-08-21 at 20.39.11.png" alt="" />
+            </div>
+
+            <div class="body-top">
+                <div class="amount">$ 20,017</div>
+                <div class="inc-exp">
+                    <div class="inc">Inc: <span>$ 17.020</span></div>
+                    <div class="exp">Exp: <span>$ 02.170</span></div>
+                </div>
+            </div>
+
+            <div class="body-middle">
+                <div class="middle-box hero__wave-container">
+                    <!-- <canvas id="canvas"></canvas> -->
+                    <div class="dots-pink">
+                    </div>
+                    <div class="dots-green"></div>
+                </div>
+            </div>
+
+            <div class="months">
+                <span>Oct</span>
+                <span>Nov</span>
+                <span>Dec</span>
+                <span>Jan</span>
+                <span>Feb</span>
+                <span>Mar</span>
+                <span>Apr</span>
+            </div>
+
+            <div class="square-box">
+                <div class="square1">
+                    <img src="./images/history-svgrepo-com.svg" alt="history">
+                    <div class="txt">History</div>
+                    <div class="today">Today: -$ 17.02</div>
+
+                </div>
+                <div class="square2">
+                    <img class="transfer" src="./images/transfer-svgrepo-com.svg" alt="transfer">
+                    <div class="txt">Transfer</div>
+                    <div class="today">Today: $ 100.00</div>
+                </div>
+            </div>
+            <div class="square-box">
+                <div class="square3">
+                    <img src="./images/ticket.svg" alt="ticket">
+                    <div class="txt">Tickets</div>
+                    <div class="today">Active now</div>
+                </div>
+                <div class="square4">
+                    <img src="./images/pie-chart.svg" alt="charts">
+                    <div class="txt">Insights</div>
+                    <div class="today">Last: Feb 2021</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="phone2">
+        <div class="container">
+            <div class="menu1">
+                <img src="./images/left-arrow-chevron-svgrepo-com.svg" alt="">
+            </div>
+
+            <div class="plus">+</div>
+
+            <div class="card">
+                <div class="glass_card_front">
+                    <img class="visa-logo" src="./images/visa-logo-removebg-preview.png" alt="">
+                    <p class="card-balance">Balance</p>
+                    <p class="card-amount">$ 170.02</p>
+                    <p class="card-number">**** 0123</p>
+                    <div class="owner" style="display: flex;">
+                    <p>TechGoals</p>
+                    <p class="valid">12/21</p> 
+                    </div>
+    
+                </div>
+                <div class="glass_card_back">
+                    <div class="circles">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                    </div>
+
+                    <p class="card-balance">Balance</p>
+                    <p class="card-amount">EUR 2000.17</p>
+                    <p class="card-number">**** 4567</p>
+                    <div class="owner" style="display: flex;">
+                    <p>TechGoals</p>
+                    <p class="valid">02/23</p> 
+                    </div>
+                </div>
+
+                <div class="default">
+                    <h2>Default Payment card</h2>
+                    <p>Balance: $ 17.020</p>
+                </div>
+
+                <div class="default-card">
+                    <div class="circles">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                    </div>
+
+                    <p class="card-balance">Balance</p>
+                    <p class="card-amount">EUR 2000.17</p>
+                    <p class="card-number">**** 4567</p>
+                    <div class="owner" style="display: flex;">
+                    <p>TechGoals</p>
+                    <p class="valid">02/23</p> 
+                    </div>
+                </div>
+
+                <div class="spending-limit">
+                    <p>Spending Limit</p>   
+                    <div class="btn-round">
+                        <div class="button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+        
+        <script src="./wave-animated.js"></script>
+        <script src="./app.js"></script>
+        <script src="./wave.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelector(".phone1"), {
+		    max: 25,
+		    speed: 200,
+            glare: "true",
+            "max-glare": 1
+    	});
+        </script>
+        
+    </main>
+</body>
+</html>
