@@ -57,6 +57,15 @@
     transform: perspective(1000px);
     transform: translateZ(45px);
   }
+  .container2{
+    position: relative;
+    width: 250px;
+    height: 530px;
+    border-radius: 15px;
+    /* transform-style: preserve-3d; */
+    transform: perspective(1000px);
+    transform: translateZ(45px);
+  }
   .menu, .menu1{
       display: flex;
   }
